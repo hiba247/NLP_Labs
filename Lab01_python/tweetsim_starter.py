@@ -8,8 +8,8 @@ from typing import Tuple, List
 # -------------------------------------------------
 
 # Students:
-#     - Hiba Guerrouache
-#     - Maria Djeblahi
+#     - ...
+#     - ...
 
 """QUESTIONS/ANSWERS
 
@@ -17,13 +17,9 @@ from typing import Tuple, List
 Q1: What are the problem(s) with normalization in our case (Algerian tweets)?
 
 A1:
-- diacritics (accents) and punctuation specific to Arabic and Berber languages can be misinterpreted by standard normalization algorithms designed for other languages. 
-
-- Algerian tweets are full of informal language, slang, and abbreviations that might not even be in dictionaries. 
-
-- Algerians sometimes switch between languages like Arabic, French, and Berber within a single tweet.
-
-- for Arabic, specific rules apply, such as the right-to-left writing direction so the rule expressions must be written in inverse, which is contrary to other languages,
+-   the DZ-ARABIC that doesn't have specific rules including word writing , that require specialized handling during normalization. 
+- each language has specific normalization processes that cannot be uniformly applied to all words from other languages. 
+-  for Arabic, specific rules apply, such as the right-to-left writing direction so the rule expressions must be written in inverse, which is contrary to other languages,
 
 
 ----------------------------------------------------------
@@ -339,9 +335,6 @@ def _tweet_sim_test():
 # TODO activate one test at the time
 if __name__ == '__main__':
     #_word_sim_test()
-    _normalize_text_test()
-    #_tweet_sim_test()
+    #_normalize_text_test()
+    _tweet_sim_test()
     
-
-
-
